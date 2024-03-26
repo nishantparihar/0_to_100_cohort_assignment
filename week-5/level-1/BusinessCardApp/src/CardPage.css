@@ -1,0 +1,49 @@
+#main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#card{
+    width: 250px;
+    margin: 10px;
+    padding-left: 30px;
+    border: 1.5px solid whitesmoke;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgba(202, 187, 187, 0.8);
+
+}
+#description{
+    color: #555563;
+
+}
+
+
+.interest{
+    margin: 7px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #556B85;
+}
+
+
+
+#socialMain{
+    margin: 15px -5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.socialButton{
+    margin: 5px 5px;
+    padding: 12px 15px;
+    background-color: #007BFF;
+    border-radius: 7px;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFCFF;
+   
+}
