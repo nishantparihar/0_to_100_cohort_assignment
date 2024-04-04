@@ -10,9 +10,15 @@ export const Assignment3 = () => {
         { name: 'Tomato', value: 30 },
         // Add more items as needed
     ]);
-
+    const [count, setCount] = useState(0);
     // Your code starts here
-    const totalValue = 0;
+    const totalValue = useMemo(()=>{
+        console.log("inside")
+        let tempValue = 0
+        items.map((item)=>{tempValue += item.value});
+        return tempValue
+    }, [items])
+    
     // Your code ends here
     return (
         <div>
@@ -22,6 +28,8 @@ export const Assignment3 = () => {
                 ))}
             </ul>
             <p>Total Value: {totalValue}</p>
+            <button onClick={()=>{setCount(count + 1)}}>{count}</button>
+            <button onClick={()=>{setItems((items)=>{return [...items,{name:"blah", value: 60}]})}}>Add Item</button>
         </div>
     );
 };
